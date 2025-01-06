@@ -21,4 +21,7 @@ console.log(message);
 var messageToPrint = `The price of your ${itemName} is ${price} dollars`; // interpolation
 console.log(messageToPrint);
 
+// new comment after the restriction was added  to the master branch
+console.log("new comment after the restriction was added  to the master branch");
+
 
