@@ -44,4 +44,29 @@ console.log(customer["firstName"]);
 console.log("Customer: " + customer.firstName + " " + customer.lastName);
 
 
+// 7. relational or comparison operators
+var a = 10;
+var b = "10";
+console.log(a == b); // true. only value is compared. loose comparison
+console.log(a === b); // false. value and type are compared. strict comparison
 
+// 8. logical operators
+console.log(false || true); // true
+console.log(true || false); // true
+
+// 9. if else statement
+var isRaining = true;
+if (isRaining) {
+    console.log("Take an umbrella");
+} else {
+    console.log("Leave your umbrella at home");
+}
+
+var hour = 5;
+if (hour >=6 && hour < 12) {
+    console.log("Good morning");
+}else if (hour >= 12 && hour < 18) {
+    console.log("Good afternoon")}
+else {
+        console.log("Good evening")
+}
