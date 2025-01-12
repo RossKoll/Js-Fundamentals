@@ -16,8 +16,12 @@ console.log("undefinedVar: " + typeof undefinedVar);
 let myArr = [1, 2, 3, 4, 5];
 myArr.shift(0);
 console.log("new array after deleting firat element by 'shift()' mmethod: " + myArr);
+console.log("length of the array: " + myArr.length);
 
 myArr.push(6);
+console.log("new array after adding element by 'push()' mmethod: " + myArr);
+console.log("length of the array: " + myArr.length);
+
 
 // 5. Concatenation and Interpolation
 var price = 50
@@ -30,6 +34,14 @@ console.log(messageToPrint);
 
 // new comment after the restriction was added  to the master branch
 console.log("new comment after the restriction was added  to the master branch");
+
+// 6. Objects
+var customer = {
+    firstName: "John",
+    lastName: "Doe",
+}
+console.log(customer["firstName"]);
+console.log("Customer: " + customer.firstName + " " + customer.lastName);
 
 
 
