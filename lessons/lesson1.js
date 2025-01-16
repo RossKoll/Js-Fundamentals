@@ -70,3 +70,24 @@ if (hour >=6 && hour < 12) {
 else {
         console.log("Good evening")
 }
+
+
+// 10 objects in arrays in objects
+
+var customer = {
+    name: "John",
+    age: 30,
+    address : [{
+        name: "office",
+        street: "123 main st",
+        city: "New York"
+    },
+    {
+        name: "werehouse",
+        street: "1456 main st",
+            city: "Chicago"
+        }]
+
+}
+
+console.log("customer first location : " + customer.address[0].city);
