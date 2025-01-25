@@ -18,6 +18,9 @@ var helloThree = () => {
 }
 helloThree();
 
+var helloThere2 = greating => console.log(greating);
+helloThere2("Hello from arrow function 2");
+
 var sumTwoNumber = () => 10 + 50;
 console.log("sum of two numbers: " + sumTwoNumber());
 
@@ -41,3 +44,14 @@ console.log(sumtiplyByTwo(10));
 //import everything from another file
 import * as help from "../helpers/printHelper.js";
 help.printGreating("Volanda");
+
+help.printTwoDigitsSum(10,2,5);
+
+//spread operator
+
+var arr = [2, 5]
+function sumTwoNumbers(a,b){
+    return a + b;
+}
+console.log("Sum of tow number using 'spread' opearotor : " + sumTwoNumbers(...arr));
+console.log(sumTwoNumbers(arr)); // 2,5undefined
