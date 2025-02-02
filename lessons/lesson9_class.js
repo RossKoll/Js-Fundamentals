@@ -20,3 +20,37 @@ if (familySize < 5 && plannedDistanceToDrive < 200) {
 }
 
 console.log(recommendedCar(familySize, plannedDistanceToDrive)); 
+
+const user = {
+    username: 'Jonny',
+    age : 45,
+}
+
+//reference value of object
+const user23 = user;
+console.log(" user name of second user " + user23.username);
+
+user23.username = 'Depp';
+console.log ("user name of second user after update the first " + user23.username);
+
+//value type of object
+let num1 = 10;
+let num2 = num1
+console.log("number two " + num2);
+
+num1 = 20;
+console.log("number two after update the first " + num2);
+
+class Person {
+    constructor (firstName, secondName){
+        this.name = firstName;
+        this.name2 = secondName;
+    }
+
+    fullname() {
+        return this.name + " " + this.name2}
+}
+
+let person = new Person("Jonny", "Depp");
+console.log("Person first namme " + person.name);
+console.log("person full name " + person.fullname())

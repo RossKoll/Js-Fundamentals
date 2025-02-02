@@ -55,3 +55,15 @@ function sumTwoNumbers(a,b){
 }
 console.log("Sum of tow number using 'spread' opearotor : " + sumTwoNumbers(...arr));
 console.log(sumTwoNumbers(arr)); // 2,5undefined
+
+//nested function
+
+function outerFunction(number){
+    console.log("outer function "+ number);
+    innerFunction(number);
+    function innerFunction(number2){
+        console.log("inner function "+ number);
+    }
+}
+
+outerFunction(10);
