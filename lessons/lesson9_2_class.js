@@ -84,3 +84,9 @@ let ite1 = new MenuItem(5,10)
 
  let item2 = new MenuItem(12, 23)
  console.log("the total price of the second menu is " + item2.totalCost)
+
+ let myArr = [1, 'cat', 3.5, true, {name: 'John', age: 23}]
+//  function printArr(element, index){
+//     console.log('The element', element, 'has index ', index)
+ //}
+let newArr = myArr.forEach((element,index) => console.log('The element', element, 'has index ', index))
