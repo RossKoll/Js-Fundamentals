@@ -84,3 +84,37 @@ let ite1 = new MenuItem(5,10)
 
  let item2 = new MenuItem(12, 23)
  console.log("the total price of the second menu is " + item2.totalCost)
+
+ let myArr = [1, 'cat', 3.5, true, {name: 'John', age: 23}]
+//  function printArr(element, index){
+//     console.log('The element', element, 'has index ', index)
+ //}
+myArr.forEach((element,index) => console.log('The element', element, 'has index ', index))
+
+
+function isString (element){
+    return typeof element === 'string'
+}
+let filterArr = myArr.filter(isString)
+console.log(" Array after sorting ", filterArr)
+
+let myCat = {
+    name: 'Tom',
+    age: 3,
+    color: 'black',
+    sound: function(){
+        console.log('Meow')
+    }
+}
+
+let someArr = [1, 2, 3, 4]
+let modifiedArr = someArr.map(x => x + 2)
+console.log(modifiedArr)
+
+function addToArr(input, arr){
+    arr.push(input)
+    console.log(arr)
+}
+
+addToArr(101, someArr)
+console.log(someArr)

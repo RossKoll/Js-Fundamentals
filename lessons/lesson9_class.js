@@ -54,3 +54,50 @@ class Person {
 let person = new Person("Jonny", "Depp");
 console.log("Person first namme " + person.name);
 console.log("person full name " + person.fullname())
+
+console.log('1: Start making sendwich ')
+
+setTimeout (()=> {
+    console.log('2: Bread is toasted')},
+    1000
+)
+
+console.log('3: Add topping')
+
+
+setTimeout(()=> 2000)
+
+
+function orderPizza() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        let pizzaReady = true; // Change to false to simulate rejection
+  
+        if (pizzaReady) {
+          resolve("🍕 Pizza is ready!");
+        } else {
+          reject("❌ Sorry, no pizza today.");
+        }
+      }, 3000);  // Wait 3 seconds
+    });
+  }
+  
+  // Using the Promise
+  orderPizza()
+    .then((message) => console.log(message))  // If resolved
+    .catch((error) => console.log(error));   // If rejected
+  
+  console.log("Waiting for pizza...");
+  
+// expaining with await
+  async function getPizza() {
+    console.log("Ordering pizza...");
+    try {
+      let result = await orderPizza();  // Wait for the promise to resolve
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
+  getPizza();
